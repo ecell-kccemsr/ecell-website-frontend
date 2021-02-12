@@ -17,12 +17,27 @@ span {
 /* NavBar */
 .logo {
   width: 90px;
-  height: 90px;
+  height: 80px;
 }
-
+.navBg{
+  background-color: #fafaf9;
+}
+.navBg .nav-link{
+  color: #2d2d2A!important;
+}
+.navBg button{
+  background-color: #2d2d2A94;
+}
 .nav-link {
   font-weight: bold;
   color: #fff!important;
+}
+
+.scrolled{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #1a5935;
 }
 /* Header */
 .header {
@@ -54,10 +69,42 @@ span {
   background: #26a362;
   text-decoration: none;
 }
+/* Blogs */
+.owl-item, .owl-stage {
+  box-shadow: 15px 16px 55px -18px rgba(10,34,20,0.79) !important;
+  -webkit-box-shadow: 15px 16px 55px -18px rgba(10,34,20,0.79);
+  -moz-box-shadow: 15px 16px 55px -18px rgba(10,34,20,0.79);
+}
+.blog-details{
+  border:1px solid rgba(0, 0, 0, 0.322);
+  border-radius: 2px;
+}
+.blog-details div{
+  background-color: #0a22140c;
+}
+
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {
+  background-color:#5FB4F5;
+  color: white;
+  border-radius: 55px;
+  border: none;
+  font-weight: bold;
+  padding: 15px 25px !important;
+  position: relative;
+  left: 40%;
+  margin: 40px;
+  transform: translate(-40%);
+}
+.owl-carousel button.owl-dot{
+  display: none!important;
+}
+
+
+
 /* Footer */
 .footer{
-  background-color: rgba(10, 34, 20, 0.2);
-  color: #0a2214;
+  background-color: rgb(32, 32, 32);
+  color: #fff;
 }
 .footer li{
   list-style: none;
@@ -71,7 +118,7 @@ span {
 }
 .footer a{
   text-decoration: none;
-  color: #0a2214;
+  color: #fff;
   opacity: 0.8;
 }
 .copyrights {
@@ -84,8 +131,4 @@ span {
   border-radius: 20px;
   padding: 10px 20px !important;
   border: 1px rgba(10, 34, 20, 0.5) solid !important;
-}
-textarea{
-  height: 300px;
-  padding: 20px 20px !important;
 }
