@@ -1,55 +1,65 @@
-import React from "react";
+import React, {useState}  from "react";
+import logo from "../images/kcecell.png";
 function Navbar() {
+  const [navbar, setNavbar] = useState(false);
+  const changeBg = ()=>{
+    if(window.scrollY >= 80){
+      setNavbar(true)
+    }else{
+      setNavbar(false)
+    }
+  }
+  window.addEventListener('scroll', changeBg);
   return (
     <div className="fixed-top">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid container">
-          <a class="navbar-brand" href="www.google.com">
+      <nav className={navbar ? 'navbar navBg navbar-expand-lg navbar-dark': 'navbar navbar-expand-lg navbar-dark'}>
+        <div className="container-fluid container">
+          <a className="navbar-brand" href="www.google.com">
             <img
-              src="https://images-ext-2.discordapp.net/external/DV2pbOen9jWqdawSoCZaNPvEKQ8UpyCTl72Kd3yhSBM/%3Fs%3D200%26v%3D4/https/avatars0.githubusercontent.com/u/75408014"
+              src={logo}
               alt="logo"
               className="logo"
             />
           </a>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo02"
+            data-toggle="collapse"
+            data-target="#navbarTogglerDemo02"
             aria-controls="navbarTogglerDemo02"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
-            <ul class="navbar-nav w-70 d-flex justify-content-evenly mb-2 mb-lg-0 ml-auto">
-              <li class="nav-item">
+          <div className="collapse navbar-collapse orange" id="navbarTogglerDemo02">
+            <ul className="navbar-nav w-70 d-flex justify-content-evenly mb-2 mb-lg-0 ml-auto">
+              <li className="nav-item">
                 <a
-                  class="nav-link active"
+                  className="nav-link active"
                   aria-current="page"
                   href="www.google.com"
                 >
                   Home
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="www.google.com">
+              <li className="nav-item">
+                <a className="nav-link" href="www.google.com">
                   About
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="www.google.com">
+              <li className="nav-item">
+                <a className="nav-link" href="www.google.com">
                   Event
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="www.google.com">
+              <li className="nav-item">
+                <a className="nav-link" href="www.google.com">
                   Project
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="www.google.com">
+              <li className="nav-item">
+                <a className="nav-link" href="www.google.com">
                   Contact
                 </a>
               </li>
