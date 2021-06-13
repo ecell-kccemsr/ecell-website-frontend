@@ -11,7 +11,7 @@ function section() {
         <div className="row my-2">
           <div className="px-2 px-md-0 col-6 col-sm-4 col-md-3">
             <ul className="d-flex px-0 flex-column justify-content-evenly">
-              <th className="py-4">Company</th>
+              <th className="py-4">Heads</th>
               <li>
                 <a href="www.google.com">Features</a>
               </li>
@@ -27,24 +27,24 @@ function section() {
             </ul>
           </div>
           <div className=" px-2 px-md-0 col-6 col-sm-4 col-md-3">
-          <ul className="d-flex px-0 flex-column justify-content-evenly">
-              <th className="py-4">Services</th>
+            <ul className="d-flex px-0 flex-column justify-content-evenly">
+              <th className="py-4">Teams</th>
               <li>
-                <a href="www.google.com">WebDesign</a>
+                <a href="www.google.com">Software </a>
+              </li>
+              <li>
+                <a href="www.google.com">Hardware</a>
               </li>
               <li>
                 <a href="www.google.com">Web Development</a>
               </li>
               <li>
-                <a href="www.google.com">Online Marketing</a>
-              </li>
-              <li>
-                <a href="www.google.com">Promotions</a>
+                <a href="www.google.com">PR & Marketing</a>
               </li>
             </ul>
           </div>
           <div className=" px-2 px-md-0 col-6 col-sm-4 col-md-3">
-          <ul className="d-flex px-0 flex-column justify-content-evenly">
+            <ul className="d-flex px-0 flex-column justify-content-evenly">
               <th className="py-4">Digital Experience</th>
               <li>
                 <a href="www.google.com">Features</a>
@@ -61,14 +61,41 @@ function section() {
             </ul>
           </div>
           <div className=" px-2 px-md-0 col-6 col-sm-12 col-md-3">
-          <ul className="d-flex px-0 flex-column justify-content-evenly">
+            <ul className="d-flex px-0 flex-column justify-content-evenly">
               <th className="py-0 py-md-4">Our Address</th>
-              <li>Lavaca Street, Suite 24, Road Apt New York, USA</li>
               <li>
-                <Instagram fontSize="large" />
-                <Facebook fontSize="large" />
-                <LinkedIn fontSize="large" />
-                <YouTube fontSize="large" />
+                Sadguru Gardens, Mithbunder Rd, near Kopri, Valmiki Nagar, Thane
+              </li>
+              <li>
+                <a
+                  href="https://instagram.com/kcecell_?utm_medium=copy_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Instagram fontSize="large" />
+                </a>
+                <a
+                  href="https://www.facebook.com/kcecell/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Facebook fontSize="large" />
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/kc-ecell-708a291b0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <LinkedIn fontSize="large" />
+                </a>
+                <a
+                  href="https://www.youtube.com/channel/UCUGQEMPcrmisFjq9KEfTYZQ"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <YouTube fontSize="large" />
+                </a>
               </li>
             </ul>
           </div>

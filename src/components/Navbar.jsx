@@ -1,25 +1,27 @@
-import React, {useState}  from "react";
+import React, { useState } from "react";
 import logo from "../images/kcecell.png";
 function Navbar() {
   const [navbar, setNavbar] = useState(false);
-  const changeBg = ()=>{
-    if(window.scrollY >= 80){
-      setNavbar(true)
-    }else{
-      setNavbar(false)
+  const changeBg = () => {
+    if (window.scrollY >= 80) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
     }
-  }
-  window.addEventListener('scroll', changeBg);
+  };
+  window.addEventListener("scroll", changeBg);
   return (
     <div className="fixed-top">
-      <nav className={navbar ? 'navbar navBg navbar-expand-lg navbar-dark': 'navbar navbar-expand-lg navbar-dark'}>
+      <nav
+        className={
+          navbar
+            ? "navbar navBg navbar-expand-lg navbar-dark p-0"
+            : "navbar navbar-expand-lg navbar-dark p-0"
+        }
+      >
         <div className="container-fluid container">
           <a className="navbar-brand" href="www.google.com">
-            <img
-              src={logo}
-              alt="logo"
-              className="logo"
-            />
+            <img src={logo} alt="logo" className="logo" />
           </a>
           <button
             className="navbar-toggler"
@@ -32,7 +34,10 @@ function Navbar() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse orange" id="navbarTogglerDemo02">
+          <div
+            className="collapse navbar-collapse orange"
+            id="navbarTogglerDemo02"
+          >
             <ul className="navbar-nav w-70 d-flex justify-content-evenly mb-2 mb-lg-0 ml-auto">
               <li className="nav-item">
                 <a
