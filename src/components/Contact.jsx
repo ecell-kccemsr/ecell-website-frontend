@@ -24,7 +24,7 @@ function Contact() {
               </p>
             </div>
           </div>
-          <form data-aos="fade-left" className="col-md-8">
+          <form data-aos="fade-out" className="col-md-8">
             <div className="row">
               <div className="col-md-6">
                 <input

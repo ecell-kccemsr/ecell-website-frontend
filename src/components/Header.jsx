@@ -7,7 +7,6 @@ function Header() {
         <div className="row gx-0 gy-0">
           <div
             data-aos="zoom-out"
-            data-aos="fade-left"
             data-aos-anchor-placement="top-center"
             className="col-md-6 order-1 order-md-2 mt-5 mt-md-0 "
           >
@@ -18,7 +17,6 @@ function Header() {
             />
           </div>
           <div
-            data-aos="zoom-out"
             data-aos="fade-right"
             data-aos-anchor-placement="top-center"
             className="col-md-6 order-2 order-md-1 d-flex align-items-center"
@@ -28,8 +26,9 @@ function Header() {
                 The true <span>Entrepreneur</span> is a doer, not a dreamer.
               </h1>
               <p clssname="my-5">
-                IT'S NOT ABOUT IDEAS IT'S ABOUT MAKING IDEAS HAPPEN. Our vision
-                is to make studentsentr epreneurial in every work that they do.
+                IT'S NOT ABOUT IDEAS IT'S ABOUT MAKING IDEAS HAPPEN. Ecell helps
+                student entrepreneurial in every work <br />
+                that they do.
               </p>
               <button className="my-btn">Get Started</button>
             </div>

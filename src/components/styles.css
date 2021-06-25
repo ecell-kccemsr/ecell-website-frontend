@@ -89,6 +89,13 @@ span {
 /* .item {
   width: 90%;
 } */
+.owl-carousel .owl-item {
+  width: 340px !important;
+}
+.owl-carousel .owl-stage {
+  display: flex;
+  justify-content: center;
+}
 .owl-carousel .owl-nav button.owl-prev,
 .owl-carousel .owl-nav button.owl-next {
   background-color: #26a362;
@@ -105,7 +112,15 @@ span {
 .owl-carousel button.owl-dot {
   display: none !important;
 }
-
+.my-btn-2 {
+  background-color: #26a362;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.my-btn-2:hover {
+  background-color: #0a2214;
+}
 /* Footer */
 .footer {
   background-color: rgb(32, 32, 32);
