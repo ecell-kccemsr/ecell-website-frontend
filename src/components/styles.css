@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "poppins";
+  transition: all ease-in-out 0.4s;
 }
 /* general */
 .w-70 {
