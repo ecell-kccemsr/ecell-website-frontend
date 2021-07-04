@@ -64,7 +64,7 @@ function Navbar() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="www.google.com">
+                <a className="nav-link" href="#contact">
                   Contact
                 </a>
               </li>

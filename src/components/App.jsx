@@ -9,17 +9,20 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "./styles.css";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 export default function App() {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <div>
-      <Navbar />
-      <Header />
-      <Blogs />
-      <Contact />
-      <Footer />
-    </div>
+    <Router>
+      <div>
+        <Navbar />
+        <Header />
+        <Blogs />
+        <Contact />
+        <Footer />
+      </div>
+    </Router>
   );
 }

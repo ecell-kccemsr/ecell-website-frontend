@@ -4,7 +4,7 @@ import Email from "@material-ui/icons/Email";
 function Contact() {
   return (
     <>
-      <div className="mt-max container contact">
+      <div id="contact" className="mt-max container contact">
         <div className="row">
           <div className="col-md-4">
             <div data-aos="fade-right">
