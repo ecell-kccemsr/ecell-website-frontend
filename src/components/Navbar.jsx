@@ -1,5 +1,11 @@
 import React, { useState } from "react";
 import logo from "../images/kcecell.png";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 function Navbar() {
   const [navbar, setNavbar] = useState(false);
   const changeBg = () => {
@@ -20,14 +26,14 @@ function Navbar() {
         }
       >
         <div className="container-fluid container">
-          <a className="navbar-brand" href="www.google.com">
+          <Link className="navbar-brand" to="">
             <img src={logo} alt="logo" className="logo" />
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
-            data-toggle="collapse"
-            data-target="#navbarTogglerDemo02"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
             aria-controls="navbarTogglerDemo02"
             aria-expanded="false"
             aria-label="Toggle navigation"

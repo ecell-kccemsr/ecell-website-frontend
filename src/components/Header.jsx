@@ -30,7 +30,9 @@ function Header() {
                 student entrepreneurial in every work <br />
                 that they do.
               </p>
-              <button className="my-btn">Get Started</button>
+              <a href="#contact">
+                <button className="my-btn">Get Started</button>
+              </a>
             </div>
           </div>
         </div>
