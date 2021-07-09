@@ -1,12 +1,7 @@
 import React, { useState } from "react";
 import logo from "../images/kcecell.png";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-function Navbar() {
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+function Navbar(props) {
   const [navbar, setNavbar] = useState(false);
   const changeBg = () => {
     if (window.scrollY >= 80) {
@@ -15,9 +10,20 @@ function Navbar() {
       setNavbar(false);
     }
   };
+  const bgColor = props.setBg;
+
+  if (bgColor == true) {
+    var customStyles = {
+      backgroundColor: "rgba(50, 241, 145, 0.4)",
+    };
+  } else {
+    var customStyles = null;
+  }
+
   window.addEventListener("scroll", changeBg);
+
   return (
-    <div className="fixed-top">
+    <div className="fixed-top" style={customStyles}>
       <nav
         className={
           navbar
@@ -26,8 +32,8 @@ function Navbar() {
         }
       >
         <div className="container-fluid container">
-          <Link className="navbar-brand" to="">
-            <img src={logo} alt="logo" className="logo" />
+          <Link className="navbar-brand" to="/">
+            <img src={logo} alt="logo" className="logo"  onClick={() => {console.log(props.onMenuClick())} } />
           </Link>
           <button
             className="navbar-toggler"
@@ -46,31 +52,32 @@ function Navbar() {
           >
             <ul className="navbar-nav w-70 d-flex justify-content-evenly mb-2 mb-lg-0 ml-auto">
               <li className="nav-item">
-                <a
+                <Link
+                  onClick={() => {console.log(props.onMenuClick())} }
                   className="nav-link active"
                   aria-current="page"
-                  href="www.google.com"
+                  to="/"
                 >
                   Home
-                </a>
+                </Link>
               </li>
-              {/* <li className="nav-item">
-                <a className="nav-link" href="www.google.com">
-                  About
-                </a>
-              </li> */}
               <li className="nav-item">
-                <a className="nav-link" href="www.google.com">
-                  Event
-                </a>
+                <Link
+                  onClick={() => {console.log(props.onMenuClick())} }
+                  className="nav-link"
+                  to={bgColor ? "/" : "#blogs"}
+                >
+                  Events
+                </Link>
               </li>
-              {/* <li className="nav-item">
-                <a className="nav-link" href="www.google.com">
-                  Project
-                </a>
-              </li> */}
               <li className="nav-item">
-                <a className="nav-link" href="#contact">
+                <a
+                  className="nav-link"
+                  href="#contact"
+                  onClick={() => {
+                    props.onMenuClick();
+                  }}
+                >
                   Contact
                 </a>
               </li>

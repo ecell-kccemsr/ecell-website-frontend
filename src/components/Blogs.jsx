@@ -32,9 +32,9 @@ const options = {
     },
   },
 };
-function Blogs() {
+const Blogs = (props) => {
   return (
-    <div className="Blogs">
+    <div id="blogs" className="Blogs">
       <div className="container">
         <h1 data-aos="fade-right" className="text-center my-5">
           Check out our Blog Posts
@@ -42,7 +42,7 @@ function Blogs() {
 
         <OwlCarousel className="slider-items owl-carousel" {...options}>
           {data &&
-            data.map((item) => {
+            data.map((item,pos) => {
               return (
                 <div key={uuid()} data-aos="flip-left" className="item">
                   <div className="blog-details">
@@ -54,7 +54,7 @@ function Blogs() {
                     <div className="px-5 py-4">
                       <span>{item.date}</span>
                       <h5 className="my-3">{item.title}</h5>
-                      <Link to="/event/post"><button className="my-btn-2 px-3 py-1">Read more</button></Link>
+                      <Link to="/event/post" onClick={() =>{props.onBlogCardClick(pos)}}><button className="my-btn-2 px-3 py-1">Read more</button></Link>
                     </div>
                   </div>
                 </div>
