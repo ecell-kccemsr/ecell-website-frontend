@@ -33,7 +33,7 @@ function Navbar(props) {
       >
         <div className="container-fluid container">
           <Link className="navbar-brand" to="/">
-            <img src={logo} alt="logo" className="logo"  onClick={() => {console.log(props.onMenuClick())} } />
+            <img src={logo} alt="logo" className="logo" />
           </Link>
           <button
             className="navbar-toggler"
@@ -53,7 +53,6 @@ function Navbar(props) {
             <ul className="navbar-nav w-70 d-flex justify-content-evenly mb-2 mb-lg-0 ml-auto">
               <li className="nav-item">
                 <Link
-                  onClick={() => {console.log(props.onMenuClick())} }
                   className="nav-link active"
                   aria-current="page"
                   to="/"
@@ -63,7 +62,6 @@ function Navbar(props) {
               </li>
               <li className="nav-item">
                 <Link
-                  onClick={() => {console.log(props.onMenuClick())} }
                   className="nav-link"
                   to={bgColor ? "/" : "#blogs"}
                 >
@@ -74,9 +72,6 @@ function Navbar(props) {
                 <a
                   className="nav-link"
                   href="#contact"
-                  onClick={() => {
-                    props.onMenuClick();
-                  }}
                 >
                   Contact
                 </a>

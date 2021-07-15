@@ -1,10 +1,29 @@
-import React from "react";
+import React , {useState , useEffect} from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import data from "../data/data";
+import {useParams} from "react-router-dom";
 
 const EventPost = (props) => {
-  const postData = data[props.loc];
+  let {slug} = useParams();
+  const [locationBlog , setLocationBlog] = useState(0);
+  const [loadLocation , setLoadLocation] = useState(true);
+ 
+  if(loadLocation == true){
+    data.map((item,pos)=>{
+      if(slug == item.url ){
+        console.log(pos);
+         setLocationBlog(locationBlog+pos);
+         setLoadLocation(false);
+      }
+    })
+  }
+  const postData = data[locationBlog];
+  useEffect(() => {
+    setLoadLocation(true);
+    setLocationBlog(0);
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <Navbar setBg={true} onMenuClick = {props.onMenuClick} />

@@ -4,7 +4,7 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import uuid from "react-uuid";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import data from "../data/data";
 const options = {
@@ -32,7 +32,7 @@ const options = {
     },
   },
 };
-const Blogs = (props) => {
+const Blogs = () => {
   return (
     <div id="blogs" className="Blogs">
       <div className="container">
@@ -54,7 +54,7 @@ const Blogs = (props) => {
                     <div className="px-5 py-4">
                       <span>{item.date}</span>
                       <h5 className="my-3">{item.title}</h5>
-                      <Link to="/event/post" onClick={() =>{props.onBlogCardClick(pos)}}><button className="my-btn-2 px-3 py-1">Read more</button></Link>
+                      <Link to={'/event/post/'+item.url} ><button className="my-btn-2 px-3 py-1">Read more</button></Link>
                     </div>
                   </div>
                 </div>
