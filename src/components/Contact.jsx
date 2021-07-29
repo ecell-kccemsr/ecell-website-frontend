@@ -7,7 +7,7 @@ function Contact() {
       <div id="contact" className="mt-max container contact">
         <div className="row">
           <div className="col-md-4">
-            <div data-aos="fade-right">
+            <div>
               <h2>Our Location</h2>
               <p className="w-70">
                 Sadguru Gardens, Mithbunder Rd, near Kopri, Valmiki Nagar, Thane
@@ -16,7 +16,7 @@ function Contact() {
                 <Phone /> +022 2532 7100
               </p>
             </div>
-            <div className="mt-5" data-aos="fade-right">
+            <div className="mt-5">
               <h2>Say Hello</h2>
               <p className="w-70">K.C. Ecell a team of student developers</p>
               <p>
@@ -24,7 +24,7 @@ function Contact() {
               </p>
             </div>
           </div>
-          <form data-aos="fade-out" className="col-md-8">
+          <form className="col-md-8">
             <div className="row">
               <div className="col-md-6">
                 <input

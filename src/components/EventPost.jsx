@@ -23,6 +23,7 @@ const EventPost = (props) => {
     setLoadLocation(true);
     setLocationBlog(0);
     window.scrollTo(0, 0);
+    document.title = postData.title;
   }, []);
   return (
     <div>

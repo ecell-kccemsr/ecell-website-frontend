@@ -1,5 +1,5 @@
 import React from "react";
-import studyGirl from "../images/study.png";
+import homeImg from "../images/Businessman-amico.svg";
 function Header() {
   return (
     <div className="header">
@@ -9,15 +9,16 @@ function Header() {
             data-aos="zoom-out"
             data-aos-anchor-placement="top-center"
             className="col-md-6 order-1 order-md-2 mt-5 mt-md-0 "
+            style={{display:"flex"}}
           >
             <img
-              className="girl-img img-fluid"
-              src={studyGirl}
+              className="home-img img-fluid"
+              src={homeImg}
               alt="study-girl"
             />
           </div>
           <div
-            data-aos="fade-right"
+            data-aos="fade-up"
             data-aos-anchor-placement="top-center"
             className="col-md-6 order-2 order-md-1 d-flex align-items-center"
           >

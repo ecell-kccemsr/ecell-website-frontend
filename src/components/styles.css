@@ -65,9 +65,9 @@ span {
 /* Header */
 .header {
   height: 110vh;
-  background-image: url("../images/top_bg.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
+  background:  url("../images/Test_bg.svg") center center no-repeat;
 }
 .header .container {
   height: 100%;
@@ -75,13 +75,15 @@ span {
 .header {
   color: #1a5935;
 }
-.girl-img {
+.home-img {
   animation: up-down 1.4s ease-in-out infinite alternate-reverse both;
+  width: 80%;
+  margin: auto;
 }
 .my-btn {
-  -webkit-border-radius: 25;
-  -moz-border-radius: 25;
-  border-radius: 25px;
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
   font-family: Arial;
   color: #ffffff;
   font-size: 20px;
@@ -103,16 +105,18 @@ span {
   -moz-box-shadow: 15px 16px 55px -18px rgba(10, 34, 20, 0.79);
 } */
 .blog-details {
-  border: 1px solid rgba(0, 0, 0, 0.322);
-  border-radius: 2px;
+  border-radius: 10px;
+  /* border: 1px solid rgba(50, 241, 145, 1.233); */
+  border: 1px solid rgba(0,0,0,0.4);
+}
+.blog-details img{
+  border-radius: 10px 10px 0 0;
 }
 .blog-details div {
   background-color: #0a22140c;
 }
-/* .item {
-  width: 90%;
-} */
 .owl-carousel .owl-item {
+  border-radius: 10px;
   width: 340px !important;
 }
 .owl-carousel .owl-stage {
@@ -172,13 +176,14 @@ span {
 .form-control,
 textarea {
   width: 100%;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 10px 20px !important;
   border: 1px rgba(10, 34, 20, 0.5) solid !important;
 }
 textarea {
   height: 300px;
   padding: 20px 20px !important;
+  outline: none;
 }
 @keyframes up-down {
   0% {

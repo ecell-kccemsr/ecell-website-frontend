@@ -1,5 +1,4 @@
 import React from "react";
-import blog from "../images/blogs.jpg";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
@@ -12,7 +11,7 @@ const options = {
   responsiveClass: true,
   nav: true,
   autoplay: false,
-  navText: ["<-", "->"],
+  navText: ["<", ">"],
   smartSpeed: 1000,
   responsive: {
     0: {
@@ -36,7 +35,7 @@ const Blogs = () => {
   return (
     <div id="blogs" className="Blogs">
       <div className="container">
-        <h1 data-aos="fade-right" className="text-center my-5">
+        <h1 className="text-center my-5">
           Check out our Blog Posts
         </h1>
 
@@ -44,17 +43,17 @@ const Blogs = () => {
           {data &&
             data.map((item,pos) => {
               return (
-                <div key={uuid()} data-aos="flip-left" className="item">
+                <div key={uuid()} className="item">
                   <div className="blog-details">
                     <img
                       src={item.image}
                       className=" p-0 img-fluid"
                       alt="blog"
                     />
-                    <div className="px-5 py-4">
-                      <span>{item.date}</span>
+                    <div className="px-3 py-4">
                       <h5 className="my-3">{item.title}</h5>
-                      <Link to={'/event/post/'+item.url} ><button className="my-btn-2 px-3 py-1">Read more</button></Link>
+                      <span >{item.date}</span> <br/>
+                      <Link to={'/event/post/'+item.url} ><button className="my-btn-2 my-2 px-3 py-1">Read more</button></Link>
                     </div>
                   </div>
                 </div>

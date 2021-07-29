@@ -14,7 +14,7 @@ function Navbar(props) {
 
   if (bgColor == true) {
     var customStyles = {
-      backgroundColor: "rgba(50, 241, 145, 0.4)",
+      backgroundColor: "rgba(32, 32, 32,0.8)",
     };
   } else {
     var customStyles = null;

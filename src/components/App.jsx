@@ -13,6 +13,9 @@ import "./styles.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function Home() {
+  useEffect(() => {
+    document.title = "Home - KC Entrepreneurship Cell";
+  }, []);
   return (
     <div>
       <Navbar hell={true} />
@@ -27,6 +30,7 @@ function Home() {
 export default function App() {
   useEffect(() => {
     Aos.init({ duration: 2000 });
+    window.scrollTo(0,0);
   }, []);
 
   return (
