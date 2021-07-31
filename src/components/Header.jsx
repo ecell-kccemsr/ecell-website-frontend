@@ -28,8 +28,7 @@ function Header() {
               </h1>
               <p clssname="my-5">
                 IT'S NOT ABOUT IDEAS IT'S ABOUT MAKING IDEAS HAPPEN. Ecell helps
-                student entrepreneurial in every work <br />
-                that they do.
+                student entrepreneurial in every work that they do.
               </p>
               <a href="#contact">
                 <button className="my-btn">Get Started</button>
