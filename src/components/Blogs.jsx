@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 
 import data from "../data/data";
 const options = {
-  margin: 90,
   responsiveClass: true,
   nav: true,
   autoplay: false,
@@ -24,7 +23,7 @@ const options = {
       items: 2,
     },
     700: {
-      items: 3,
+      items: 2,
     },
     1000: {
       items: 3,
@@ -43,7 +42,7 @@ const Blogs = () => {
           {data &&
             data.map((item,pos) => {
               return (
-                <div key={uuid()} className="item">
+                <div key={uuid()} className="item mx-2">
                   <div className="blog-details">
                     <img
                       src={item.image}

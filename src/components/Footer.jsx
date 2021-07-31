@@ -13,16 +13,16 @@ function section() {
             <ul className="d-flex px-0 flex-column justify-content-evenly">
               <th className="py-4">Heads</th>
               <li>
-                <a href="www.google.com">Features</a>
+                <a >Features</a>
               </li>
               <li>
-                <a href="www.google.com">About us</a>
+                <a >About us</a>
               </li>
               <li>
-                <a href="www.google.com">Get in Touch</a>
+                <a >Get in Touch</a>
               </li>
               <li>
-                <a href="www.google.com">Our Portfolio</a>
+                <a >Our Portfolio</a>
               </li>
             </ul>
           </div>
@@ -30,16 +30,16 @@ function section() {
             <ul className="d-flex px-0 flex-column justify-content-evenly">
               <th className="py-4">Teams</th>
               <li>
-                <a href="www.google.com">Software </a>
+                <a >Software </a>
               </li>
               <li>
-                <a href="www.google.com">Hardware</a>
+                <a >Hardware</a>
               </li>
               <li>
-                <a href="www.google.com">Web Development</a>
+                <a >Web Development</a>
               </li>
               <li>
-                <a href="www.google.com">PR & Marketing</a>
+                <a >PR & Marketing</a>
               </li>
             </ul>
           </div>
@@ -47,16 +47,16 @@ function section() {
             <ul className="d-flex px-0 flex-column justify-content-evenly">
               <th className="py-4">Digital Experience</th>
               <li>
-                <a href="www.google.com">Features</a>
+                <a >Features</a>
               </li>
               <li>
-                <a href="www.google.com">About us</a>
+                <a >About us</a>
               </li>
               <li>
-                <a href="www.google.com">Get in Touch</a>
+                <a >Get in Touch</a>
               </li>
               <li>
-                <a href="www.google.com">Our Portfolio</a>
+                <a >Our Portfolio</a>
               </li>
             </ul>
           </div>
@@ -102,7 +102,7 @@ function section() {
         </div>
         <div className="copyrights container py-4 px-0">
           <p className="my-0">
-            © 2019 All Rights Reserved Design by <span>Sumedh Indulkar</span>
+            © 2021  <span> Team Web Dev</span>, ECell KCCEMSR
           </p>
         </div>
       </div>

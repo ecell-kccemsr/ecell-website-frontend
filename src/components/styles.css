@@ -69,6 +69,15 @@ span {
   background-size: cover;
   background:  url("../images/Test_bg.svg") center center no-repeat;
 }
+@media (max-width:768px) {
+  .header{
+    height: 100%;
+  }
+  .header .w-70{
+    margin: 0.4rem 0;
+    width: 100%;
+  }
+}
 .header .container {
   height: 100%;
 }
@@ -118,6 +127,7 @@ span {
 .owl-carousel .owl-item {
   border-radius: 10px;
   width: 340px !important;
+  margin: 0 1.2rem;
 }
 .owl-carousel .owl-stage {
   display: flex;
@@ -211,4 +221,14 @@ textarea {
 .footer a:hover{
   color: #fff;
   opacity: 1;
+}
+
+/* debugging of owl */
+@media (min-width: 576px){
+  .Blogs .container{
+    max-width: 100%;
+  }
+  .owl-stage{
+    justify-content: space-evenly;
+  }
 }
