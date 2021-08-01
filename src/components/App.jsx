@@ -15,6 +15,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function Home() {
   useEffect(() => {
+    window.scrollTo(0, 0);
     document.title = "Home - KC Entrepreneurship Cell";
   }, []);
   return (
