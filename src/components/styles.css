@@ -180,6 +180,7 @@ span {
   text-decoration: none;
   color: #fff;
   opacity: 0.8;
+  cursor: pointer;
 }
 .copyrights {
   border-top: #0a2214 1px solid;
