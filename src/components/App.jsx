@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import Contact from "./Contact";
 import Blogs from "./Blogs";
 import EventPost from "./EventPost";
+import Events from '../pages/Events';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import Aos from "aos";
@@ -40,9 +41,10 @@ export default function App() {
           {" "}
           <Home/>
         </Route>
-        <Route path="/event/post/:slug">
+        <Route path="/events/:slug">
           <EventPost/>
         </Route>
+        <Route to="/events" component={Events}/>
       </Switch>
     </Router>
   );

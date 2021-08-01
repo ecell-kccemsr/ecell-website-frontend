@@ -27,7 +27,7 @@ const EventPost = (props) => {
   }, []);
   return (
     <div>
-      <Navbar setBg={true} onMenuClick = {props.onMenuClick} />
+      <Navbar onMenuClick = {props.onMenuClick} />
       <div className="container event-container" style={{position:"relative", top:"90px", marginBottom:"2rem" , paddingBottom : "90px", paddingTop:"5rem"}}>
         <div className="img-container" style={{display:"flex",marginBottom:"2rem",flexDirection:"column"}}>
         <img style={{margin:"auto",marginBottom:"1rem"}} className="img-fluid" draggable="false" src={postData.image} alt="" />

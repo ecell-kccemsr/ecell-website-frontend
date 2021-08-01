@@ -1,0 +1,17 @@
+.EventsContainer{
+    position: relative;
+    top: 90px;
+    margin-bottom: 5rem;
+    padding: 1rem 2rem 5rem;
+}
+.EventsContainer .cardContainer{
+    margin: 1rem 0;
+}
+@media (max-width:768px) {
+    .EventsContainer{
+        max-width: 100% !important;
+    }
+    .EventsContainer img{
+        width: 100%
+    };
+}

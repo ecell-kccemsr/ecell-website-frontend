@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import logo from "../images/kcecell.png";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter , useLocation as Router, Switch, Route, Link, useLocation } from "react-router-dom";
 function Navbar(props) {
   const [navbar, setNavbar] = useState(false);
   const changeBg = () => {
@@ -10,9 +10,11 @@ function Navbar(props) {
       setNavbar(false);
     }
   };
-  const bgColor = props.setBg;
+  const location = useLocation();
+  const currentLocation = location.pathname;
 
-  if (bgColor == true) {
+
+  if (currentLocation != "/") {
     var customStyles = {
       backgroundColor: "rgba(32, 32, 32,0.8)",
     };
@@ -21,6 +23,18 @@ function Navbar(props) {
   }
 
   window.addEventListener("scroll", changeBg);
+  const contactLink = () =>{
+    if(currentLocation == "/"){
+      return(
+        <a className="nav-link" href="#contact">Contact</a>
+      );
+    }
+    else{
+      return(
+        <Link className="nav-link" to="/">Contact</Link>
+      );
+    }
+  }
 
   return (
     <div className="fixed-top" style={customStyles}>
@@ -63,18 +77,13 @@ function Navbar(props) {
               <li className="nav-item">
                 <Link
                   className="nav-link"
-                  to={bgColor ? "/" : "#blogs"}
+                  to="/events"
                 >
                   Events
                 </Link>
               </li>
               <li className="nav-item">
-                <a
-                  className="nav-link"
-                  href="#contact"
-                >
-                  Contact
-                </a>
+                {contactLink()}
               </li>
             </ul>
           </div>

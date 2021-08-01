@@ -35,7 +35,7 @@ const Blogs = () => {
     <div id="blogs" className="Blogs">
       <div className="container">
         <h1 className="text-center my-5">
-          Check out our Blog Posts
+          Our Recent Blog Posts
         </h1>
 
         <OwlCarousel className="slider-items owl-carousel" {...options}>
@@ -52,7 +52,7 @@ const Blogs = () => {
                     <div className="px-3 py-4">
                       <h5 className="my-3">{item.title}</h5>
                       <span >{item.date}</span> <br/>
-                      <Link to={'/event/post/'+item.url} ><button className="my-btn-2 my-2 px-3 py-1">Read more</button></Link>
+                      <Link to={'/events/'+item.url} ><button className="my-btn-2 my-2 px-3 py-1">Read more</button></Link>
                     </div>
                   </div>
                 </div>
