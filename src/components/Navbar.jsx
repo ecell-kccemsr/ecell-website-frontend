@@ -58,7 +58,9 @@ function Navbar(props) {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            {/* <span className="navbar-toggler-icon">
+            </span> */}
+            <i class="bi bi-list"></i>
           </button>
           <div
             className="collapse navbar-collapse orange"

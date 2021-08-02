@@ -50,7 +50,7 @@ const Blogs = () => {
                       alt="blog"
                     />
                     <div className="px-3 py-4">
-                      <h5 className="my-3">{item.title}</h5>
+                      <h5 className="my-3 card-title">{item.title}</h5>
                       <span >{item.date}</span> <br/>
                       <Link to={'/events/'+item.url} ><button className="my-btn-2 my-2 px-3 py-1">Read more</button></Link>
                     </div>

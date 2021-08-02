@@ -46,9 +46,12 @@ span {
   
 }
 @media (max-width : 992px) {
-  /* .navbar{
-    background-color: #fafaf977;
-  } */
+  .navbar{
+    background-color: #fff;
+  }
+  .navbar i{
+    color: black;
+  }
   .nav-link {
     font-weight: bold;
     color: #2d2d2a !important;
@@ -160,6 +163,15 @@ span {
 }
 .my-btn-2:hover {
   background-color: #0a2214;
+}
+.item .card-title{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-box-orient: vertical;
+  height: 48px;
+  max-height: 48px;
 }
 /* Footer */
 .footer {
