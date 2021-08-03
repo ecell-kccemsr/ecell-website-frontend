@@ -44,12 +44,14 @@ const Blogs = () => {
               return (
                 <div key={uuid()} className="item mx-2">
                   <div className="blog-details">
+                    <div className="imgContainer">
                     <img
                       src={item.image}
                       className=" p-0 img-fluid"
                       alt="blog"
                     />
-                    <div className="px-3 py-4">
+                    </div>
+                    <div className="px-3 cardDetails py-4">
                       <h5 className="my-3 card-title">{item.title}</h5>
                       <span >{item.date}</span> <br/>
                       <Link to={'/events/'+item.url} ><button className="my-btn-2 my-2 px-3 py-1">Read more</button></Link>

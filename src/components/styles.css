@@ -21,7 +21,7 @@ span {
   height: 80px;
 }
 .navBg {
-  background-color: #fafaf977;
+  background-color: #fff;
 }
 .navBg .nav-link {
   color: #2d2d2a !important;
@@ -47,7 +47,7 @@ span {
 }
 @media (max-width : 992px) {
   .navbar{
-    background-color: #fff;
+    /* background-color: #fff; */
   }
   .navbar i{
     color: black;
@@ -117,7 +117,7 @@ span {
   -moz-box-shadow: 15px 16px 55px -18px rgba(10, 34, 20, 0.79);
 } */
 .blog-details {
-  border-radius: 10px;
+  border-radius: 15px;
   /* border: 1px solid rgba(50, 241, 145, 1.233); */
   border: 1px solid rgba(0,0,0,0.4);
 }
@@ -163,6 +163,13 @@ span {
 }
 .my-btn-2:hover {
   background-color: #0a2214;
+}
+.item .imgContainer{
+  overflow: hidden;
+}
+.item img{
+  transition: all ease-in-out 0.6s;
+  border-radius: 15px 15px 0 0;
 }
 .item .card-title{
   overflow: hidden;
@@ -244,4 +251,7 @@ textarea {
   .owl-stage{
     justify-content: space-evenly;
   }
+}
+.item:hover img{
+  transform: scale(1.5);
 }

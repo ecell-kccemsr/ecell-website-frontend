@@ -16,7 +16,7 @@ function Navbar(props) {
 
   if (currentLocation != "/") {
     var customStyles = {
-      backgroundColor: "rgba(32, 32, 32,0.8)",
+      color : "black"
     };
   } else {
     var customStyles = null;
@@ -37,7 +37,7 @@ function Navbar(props) {
   }
 
   return (
-    <div className="fixed-top" style={customStyles}>
+    <div className="fixed-top">
       <nav
         className={
           navbar
@@ -66,7 +66,7 @@ function Navbar(props) {
             className="collapse navbar-collapse orange"
             id="navbarTogglerDemo02"
           >
-            <ul className="navbar-nav w-70 d-flex justify-content-evenly mb-2 mb-lg-0 ml-auto">
+            <ul style={customStyles} className="navbar-nav w-70 d-flex justify-content-evenly mb-2 mb-lg-0 ml-auto">
               <li className="nav-item">
                 <Link
                   className="nav-link active"
