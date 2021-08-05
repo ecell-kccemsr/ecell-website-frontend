@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState , useEffect} from "react";
 import logo from "../images/kcecell.png";
 import { BrowserRouter , useLocation as Router, Switch, Route, Link, useLocation } from "react-router-dom";
 function Navbar(props) {
@@ -36,6 +36,11 @@ function Navbar(props) {
     }
   }
 
+  const [mobileDropDown, setMobileDropDown] = useState(true);
+
+  useEffect(()=>{
+    // setMobileDropDown(true);
+  })
   return (
     <div className="fixed-top">
       <nav
@@ -57,10 +62,10 @@ function Navbar(props) {
             aria-controls="navbarTogglerDemo02"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            onClick={()=> setMobileDropDown(!mobileDropDown)}
           >
-            {/* <span className="navbar-toggler-icon">
-            </span> */}
-            <i class="bi bi-list"></i>
+            {mobileDropDown ? <i class="bi bi-list"></i> : <i class="bi bi-x"></i>}
+            
           </button>
           <div
             className="collapse navbar-collapse orange"
