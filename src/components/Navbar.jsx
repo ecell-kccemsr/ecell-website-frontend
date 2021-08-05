@@ -16,7 +16,7 @@ function Navbar(props) {
 
   if (currentLocation != "/") {
     var customStyles = {
-      color : "black"
+      color : "#000 !important"
     };
   } else {
     var customStyles = null;
