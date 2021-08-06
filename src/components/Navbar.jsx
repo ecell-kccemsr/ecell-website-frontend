@@ -1,6 +1,6 @@
-import React, { useState , useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../images/kcecell.png";
-import { BrowserRouter , useLocation as Router, Switch, Route, Link, useLocation } from "react-router-dom";
+import { BrowserRouter, useLocation as Router, Switch, Route, Link, useLocation } from "react-router-dom";
 function Navbar(props) {
   const [navbar, setNavbar] = useState(false);
   const changeBg = () => {
@@ -13,24 +13,25 @@ function Navbar(props) {
   const location = useLocation();
   const currentLocation = location.pathname;
 
-
-  if (currentLocation != "/") {
-    var customStyles = {
-      color : "#000 !important"
-    };
-  } else {
-    var customStyles = null;
+  const [isLocHome, setIsLocHome] = useState(false);
+  const isLocHomeCheck = () => {
+    if (currentLocation == "/") {
+      setIsLocHome(true);
+    }
+    else {
+      setIsLocHome(false);
+    }
   }
 
   window.addEventListener("scroll", changeBg);
-  const contactLink = () =>{
-    if(currentLocation == "/"){
-      return(
+  const contactLink = () => {
+    if (currentLocation == "/") {
+      return (
         <a className="nav-link" href="#contact">Contact</a>
       );
     }
-    else{
-      return(
+    else {
+      return (
         <Link className="nav-link" to="/">Contact</Link>
       );
     }
@@ -38,8 +39,8 @@ function Navbar(props) {
 
   const [mobileDropDown, setMobileDropDown] = useState(true);
 
-  useEffect(()=>{
-    // setMobileDropDown(true);
+  useEffect(() => {
+    isLocHomeCheck();
   })
   return (
     <div className="fixed-top">
@@ -62,16 +63,19 @@ function Navbar(props) {
             aria-controls="navbarTogglerDemo02"
             aria-expanded="false"
             aria-label="Toggle navigation"
-            onClick={()=> setMobileDropDown(!mobileDropDown)}
+            onClick={() => setMobileDropDown(!mobileDropDown)}
           >
             {mobileDropDown ? <i class="bi bi-list"></i> : <i class="bi bi-x"></i>}
-            
+
           </button>
           <div
             className="collapse navbar-collapse orange"
             id="navbarTogglerDemo02"
           >
-            <ul style={customStyles} className="navbar-nav w-70 d-flex justify-content-evenly mb-2 mb-lg-0 ml-auto">
+            <ul className={ 
+              isLocHome ? "navbar-nav w-70 d-flex justify-content-evenly mb-2 mb-lg-0 ml-auto"
+              : "navbar-nav w-70 d-flex justify-content-evenly mb-2 mb-lg-0 ml-auto not-home"
+            }>
               <li className="nav-item">
                 <Link
                   className="nav-link active"

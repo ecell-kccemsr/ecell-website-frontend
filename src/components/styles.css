@@ -20,6 +20,9 @@ span {
   width: 90px;
   height: 80px;
 }
+.navbar .not-home .nav-link{
+  color: #2d2d2a !important;
+}
 .navbar{
   border-bottom: 0.1px solid none;
 }
@@ -63,12 +66,6 @@ span {
 }
 .navbar-toggler:focus {
   box-shadow: none;
-}
-.scrolled {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #1a5935;
 }
 /* Header */
 .header {
@@ -162,13 +159,13 @@ span {
   display: none !important;
 }
 .my-btn-2 {
-  background-color: #26a362;
+  background-color: #32F18F;
   color: white;
   border: none;
   border-radius: 5px;
 }
 .my-btn-2:hover {
-  background-color: #0a2214;
+  background-color: #26a362;
 }
 .item .imgContainer{
   overflow: hidden;
