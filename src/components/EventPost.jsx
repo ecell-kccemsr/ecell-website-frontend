@@ -25,15 +25,9 @@ const EventPost = (props) => {
     document.title = postData.title;
   }, []);
 
-  const paragraphRender = (paraData) => {
-    let paraArr = paraData.split("\n");
-    // console.log(paraArr);
-    paraArr.map((item, pos) => {
-      return (
-        <p key={pos}>{item}</p>
-      );
-    });
-  }
+  const paraData = postData.desc;
+  const paraArr = paraData.split("\n");
+  const finalPara = paraArr.map((item) => { return (<p>{item}</p>) })
   return (
     <div>
       <Navbar onMenuClick={props.onMenuClick} />
@@ -42,10 +36,9 @@ const EventPost = (props) => {
           <img style={{ margin: "auto", marginBottom: "1rem" }} className="img-fluid" draggable="false" src={postData.image} alt="" />
           <span style={{ textAlign: "center" }}>Date: {postData.date} </span>
         </div>
-        <h1>{postData.title}</h1>
-        {/* <p>{postData.desc}</p> */}
+        <h1>{postData.title}</h1>       
         <div>
-          {paragraphRender(postData.desc)}
+          {finalPara}
         </div>
       </div>
       < Footer />
