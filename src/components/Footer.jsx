@@ -3,6 +3,7 @@ import Instagram from "@material-ui/icons/Instagram";
 import Facebook from "@material-ui/icons/Facebook";
 import LinkedIn from "@material-ui/icons/LinkedIn";
 import YouTube from "@material-ui/icons/YouTube";
+import {Link} from 'react-router-dom';
 
 function section() {
   return (
@@ -102,7 +103,7 @@ function section() {
         </div>
         <div className="copyrights container py-4 px-0">
           <p className="my-0">
-            © 2021  <span> Team Web Dev</span>, ECell KCCEMSR
+            © 2021  <Link to="/members"><span> Team Web Dev</span></Link>, ECell KCCEMSR
           </p>
         </div>
       </div>

@@ -11,7 +11,8 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "./styles.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Members from '../pages/Members';
 
 function Home() {
   useEffect(() => {
@@ -45,7 +46,8 @@ export default function App() {
         <Route path="/events/:slug">
           <EventPost/>
         </Route>
-        <Route to="/events" component={Events}/>
+        <Route path="/events" component={Events}/>
+        <Route path="/members" component={Members}/>
       </Switch>
     </Router>
   );

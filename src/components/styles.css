@@ -53,9 +53,6 @@ span {
   
 }
 @media (max-width : 992px) {
-  .navbar{
-    /* background-color: #fff; */
-  }
   .navbar i{
     color: black;
   }
@@ -63,6 +60,10 @@ span {
     font-weight: bold;
     color: #2d2d2a !important;
   }
+}
+.navbar-dark .navbar-toggler{
+  color: transparent;
+  border-color: transparent;
 }
 .navbar-toggler:focus {
   box-shadow: none;
