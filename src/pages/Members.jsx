@@ -26,8 +26,8 @@ export const Members = () => {
                                 <p>Full Stack Developer</p>
                             </div>
                             <div className="social-icons">
-                                <a target="_blank" href=""><i class="bi bi-github"></i></a>
-                                <a target="_blank" href=""><i class="bi bi-linkedin"></i></a>
+                                <a target="_blank" href="https://github.com/sumedhindulkar"><i class="bi bi-github"></i></a>
+                                <a target="_blank" href="https://www.linkedin.com/in/sumedh-indulkar/"><i class="bi bi-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
@@ -41,8 +41,8 @@ export const Members = () => {
                                 <p>FrontEnd Developer</p>
                             </div>
                             <div className="social-icons">
-                                <a target="_blank" href=""><i class="bi bi-github"></i></a>
-                                <a target="_blank" href=""><i class="bi bi-linkedin"></i></a>
+                                <a target="_blank" href="https://github.com/thisisrishabh22"><i class="bi bi-github"></i></a>
+                                <a target="_blank" href="https://www.linkedin.com/in/rishabhh-singh/"><i class="bi bi-linkedin"></i></a>
                             </div>
                         </div>
                     </div>

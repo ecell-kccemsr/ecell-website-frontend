@@ -121,7 +121,6 @@ span {
 } */
 .blog-details {
   border-radius: 15px;
-  /* border: 1px solid rgba(50, 241, 145, 1.233); */
   border: 1px solid rgba(0,0,0,0.1);
 }
 .blog-details img{
@@ -249,7 +248,13 @@ textarea {
   color: #fff;
   opacity: 1;
 }
-
+.footer span{
+  color: #32F18F;
+  opacity: 0.9;
+}
+.event-container h1{
+  margin: 1.5rem 0;
+}
 /* debugging of owl */
 @media (min-width: 576px){
   .Blogs .container{
@@ -260,5 +265,5 @@ textarea {
   }
 }
 .item:hover img{
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
