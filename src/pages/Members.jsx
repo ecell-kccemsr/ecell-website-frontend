@@ -38,7 +38,7 @@ export const Members = () => {
                             </div>
                             <div className="section-details">
                                 <h4>Rishabh Singh</h4>
-                                <p>FrontEnd Developer</p>
+                                <p>Front-End Developer</p>
                             </div>
                             <div className="social-icons">
                                 <a target="_blank" href="https://github.com/thisisrishabh22"><i class="bi bi-github"></i></a>
