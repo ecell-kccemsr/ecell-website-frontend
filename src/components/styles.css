@@ -24,7 +24,7 @@ span {
   color: #2d2d2a !important;
 }
 .navbar{
-  border-bottom: 0.1px solid none;
+  border-bottom: 0.1px solid transparent;
 }
 .navBg {
   background-color: #fff;
