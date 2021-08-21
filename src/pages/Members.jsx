@@ -14,7 +14,8 @@ export const Members = () => {
         <div>
             <Navbar />
             <div className="membersSection">
-                <h1>Our Team</h1>
+                <h1>Our Web Dev Team</h1>
+                <p>Geeks who developed our website</p>
                 <div className="row">
                     <div className="col-lg-4 col-md-6">
                         <div className="memberCard">

@@ -96,6 +96,15 @@ function Navbar(props) {
               <li className="nav-item">
                 {contactLink()}
               </li>
+              
+              <li className="nav-item">
+                <Link
+                  className="nav-link"
+                  to="/team"
+                >
+                  Team
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
