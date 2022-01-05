@@ -2,7 +2,13 @@ import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "../pages/members.css";
-import { heads } from "../data/members";
+import {
+  heads,
+  developers,
+  marketing,
+  hardware,
+  design,
+} from "../data/members";
 
 export const Team = () => {
   useEffect(() => {
@@ -10,18 +16,18 @@ export const Team = () => {
     document.title = "Our Team - KC Entrepreneurship Cell";
   }, []);
 
-  const headRenderer = () => {
-    const headData = heads.map((item, index) => {
+  const _dataRenderer = (data) => {
+    const finData = data.map((item, index) => {
       return (
         <div className="col-lg-4 col-md-6" key={index}>
           <div className="memberCard">
             <div className="img-container">
-              <img src={item.img} alt={item.name} />
+              <img src={item.img} alt={item.name} draggable={false} />
             </div>
             <div className="section-details no-btm">
               <h4>{item.name}</h4>
               <p>{item.position}</p>
-              <p>{item.team}</p>
+              {item.position !== "Member" && <p>{item.team}</p>}
             </div>
             <div className="social-icons">
               <a target="_blank" href={item.github}>
@@ -36,7 +42,7 @@ export const Team = () => {
       );
     });
 
-    return headData;
+    return finData;
   };
 
   return (
@@ -45,7 +51,23 @@ export const Team = () => {
       <div className="membersSection">
         <h1>Our Core Team</h1>
         <h4 className="my-4">Heads & Coordinators</h4>
-        <div className="row">{headRenderer()}</div>
+        <div className="row">{_dataRenderer(heads)}</div>
+      </div>
+      <div className="membersSection container">
+        <h4 className="my-4">Developer Team</h4>
+        <div className="row">{_dataRenderer(developers)}</div>
+      </div>
+      <div className="membersSection container">
+        <h4 className="my-4">Marketing Team</h4>
+        <div className="row">{_dataRenderer(marketing)}</div>
+      </div>
+      <div className="membersSection container">
+        <h4 className="my-4">Design Team</h4>
+        <div className="row">{_dataRenderer(design)}</div>
+      </div>
+      <div className="membersSection container">
+        <h4 className="my-4">Hardware Team</h4>
+        <div className="row">{_dataRenderer(hardware)}</div>
       </div>
       <Footer />
     </div>

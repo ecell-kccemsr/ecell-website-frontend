@@ -46,7 +46,7 @@ export const Members = () => {
               </div>
               <div className="section-details">
                 <h4>Rishabh Singh</h4>
-                <p>Front-End Developer</p>
+                <p>Full Stack Developer</p>
               </div>
               <div className="social-icons">
                 <a target="_blank" href="https://github.com/thisisrishabh22">
