@@ -13,6 +13,7 @@ import "aos/dist/aos.css";
 import "./styles.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Members from '../pages/Members';
+import { Team } from "../pages/Team";
 
 function Home() {
   useEffect(() => {
@@ -48,6 +49,7 @@ export default function App() {
         </Route>
         <Route path="/events" component={Events}/>
         <Route path="/members" component={Members}/>
+        <Route path="/team" component={Team}/>
       </Switch>
     </Router>
   );

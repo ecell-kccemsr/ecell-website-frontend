@@ -1,43 +1,49 @@
-.membersSection{
-    margin-top: 90px;
-    padding: 1.3rem;
+.membersSection {
+  margin-top: 90px;
+  padding: 1.3rem;
 }
-.membersSection h1, .membersSection p{
-    text-align: center;
+.membersSection h1,
+.membersSection p,
+.membersSection h4 {
+  text-align: center;
 }
-.memberCard{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background: #0a221405;
-    width: 18rem;
-    margin: 2rem auto;
-    border-radius: 15px;
-    border: 1px solid rgba(0,0,0,0.1);
+.memberCard {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: #0a221405;
+  width: 18rem;
+  margin: 2rem auto;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
-.memberCard:hover img{
-    transform: scale(1.13);
+.memberCard .section-details.no-btm p {
+  margin-bottom: 0.2rem !important;
 }
-.memberCard img{
-    width: 180px;
-    height: 180px;
-    transition: all ease-in-out 0.4s;
+.memberCard:hover img {
+  transform: scale(1.13) !important;
 }
-.memberCard .img-container{
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    margin: 2rem auto;
-    overflow: hidden;
+.memberCard img {
+  width: 180px;
+  height: 180px;
+  transition: all ease-in-out 0.4s;
 }
-.memberCard .img-container img{
-    border-radius: 50%;
+.memberCard .img-container {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin: 2rem auto;
+  overflow: hidden;
 }
-.memberCard .social-icons{
-    margin: 0 0 1rem 0;
+.memberCard .img-container img {
+  border-radius: 50%;
+  transform: scale(1.01);
 }
-.memberCard a{
-    color: black;
-    font-size: 1.5rem;
-    margin: 2rem 0.5rem;
+.memberCard .social-icons {
+  margin: 0 0 1rem 0;
+}
+.memberCard a {
+  color: black;
+  font-size: 1.5rem;
+  margin: 2rem 0.5rem;
 }
