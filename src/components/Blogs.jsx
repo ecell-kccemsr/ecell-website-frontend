@@ -34,27 +34,29 @@ const Blogs = () => {
   return (
     <div id="blogs" className="Blogs">
       <div className="container">
-        <h1 className="text-center my-5">
-          Our Recent Blog Posts
-        </h1>
+        <h1 className="text-center my-5">Check our blogs</h1>
 
         <OwlCarousel className="slider-items owl-carousel" {...options}>
           {data &&
-            data.map((item,pos) => {
+            data.map((item, pos) => {
               return (
                 <div key={uuid()} className="item mx-2">
                   <div className="blog-details">
                     <div className="imgContainer">
-                    <img
-                      src={item.image}
-                      className=" p-0 img-fluid"
-                      alt="blog"
-                    />
+                      <img
+                        src={item.image}
+                        className=" p-0 img-fluid"
+                        alt="blog"
+                      />
                     </div>
                     <div className="px-3 cardDetails py-4">
                       <h5 className="my-3 card-title">{item.title}</h5>
-                      <span >{item.date}</span> <br/>
-                      <Link to={'/events/'+item.url} ><button className="my-btn-2 my-2 px-3 py-1">Read more</button></Link>
+                      <span>{item.date}</span> <br />
+                      <Link to={"/events/" + item.url}>
+                        <button className="my-btn-2 my-2 px-3 py-1">
+                          Read more
+                        </button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -64,6 +66,6 @@ const Blogs = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Blogs;
