@@ -38,13 +38,13 @@ const EventPost = (props) => {
     return <p key={index}>{item}</p>;
   });
 
-  var imgWidth = ref.current?.offsetWidth;
-  var imgHeight = ref.current?.height;
+  const [imgWidth, setImgWidth] = useState(ref.current?.offsetWidth);
+  const [imgHeight, setImgHeight] = useState(ref.current?.height);
 
   useEffect(() => {
-    imgWidth = ref.current.offsetWidth;
-    imgHeight = ref.current.height;
-  }, [ref.current, size, imgWidth, imgHeight]);
+    setImgWidth(ref.current.offsetWidth);
+    setImgHeight(ref.current.height);
+  }, [ref, size, imgWidth, imgHeight]);
 
   return (
     <div>
@@ -74,7 +74,10 @@ const EventPost = (props) => {
             className="event-title"
             style={{ marginLeft: 20, marginRight: 20 }}
           >
-            {postData.title}
+            <span style={{ color: "rgb(50,241,143)", fontSize: "1.5em" }}>
+              {postData.title[0]}
+            </span>
+            {postData.title.slice(1, postData.title.length)}
           </h1>
           <div className="img-wrapper">
             <img
@@ -111,7 +114,12 @@ const EventPost = (props) => {
           <span>{postData.date} </span>
         </div>
         <div style={{ marginTop: 70 }}>
-          <h1 className="secondary-title">{postData.title}</h1>
+          <h1 className="secondary-title">
+            <span style={{ color: "rgb(50,241,143)", fontSize: "1.5em" }}>
+              {postData.title[0]}
+            </span>
+            {postData.title.slice(1, postData.title.length)}
+          </h1>
           <div>{finalPara}</div>
         </div>
       </div>

@@ -35,7 +35,7 @@ const Events = (props) => {
     <div>
       <Navbar onMenuClick={props.onMenuClick} />
       <div className="EventsContainer">
-        <h1 className="text-center my-5">Check out our Blog Posts</h1>
+        <h1 className="text-center my-5">Check our blogs</h1>
         <div className="row">{eventCardRender}</div>
       </div>
       <Footer />
