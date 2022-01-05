@@ -65,7 +65,7 @@ function Navbar(props) {
             aria-label="Toggle navigation"
             onClick={() => setMobileDropDown(!mobileDropDown)}
           >
-            {mobileDropDown ? <i class="bi bi-list"></i> : <i class="bi bi-x"></i>}
+            {mobileDropDown ? <i className="bi bi-list"></i> : <i className="bi bi-x"></i>}
 
           </button>
           <div

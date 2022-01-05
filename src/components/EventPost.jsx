@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import data from "../data/data";
@@ -8,14 +8,21 @@ const EventPost = (props) => {
   let { slug } = useParams();
   const [locationBlog, setLocationBlog] = useState(0);
   const [loadLocation, setLoadLocation] = useState(true);
+  const [size, setSize] = useState([0, 0]);
 
-  if (loadLocation == true) {
+  const ref = useRef();
+
+  window.addEventListener("resize", () => {
+    setSize([window.innerWidth, window.innerHeight]);
+  });
+
+  if (loadLocation === true) {
     data.map((item, pos) => {
-      if (slug == item.url) {
+      if (slug === item.url) {
         setLocationBlog(locationBlog + pos);
         setLoadLocation(false);
       }
-    })
+    });
   }
   const postData = data[locationBlog];
   useEffect(() => {
@@ -27,21 +34,88 @@ const EventPost = (props) => {
 
   const paraData = postData.desc;
   const paraArr = paraData.split("\n");
-  const finalPara = paraArr.map((item) => { return (<p>{item}</p>) })
+  const finalPara = paraArr.map((item, index) => {
+    return <p key={index}>{item}</p>;
+  });
+
+  var imgWidth = ref.current?.offsetWidth;
+  var imgHeight = ref.current?.height;
+
+  useEffect(() => {
+    imgWidth = ref.current.offsetWidth;
+    imgHeight = ref.current.height;
+  }, [ref.current, size, imgWidth, imgHeight]);
+
   return (
     <div>
       <Navbar onMenuClick={props.onMenuClick} />
-      <div className="container event-container" style={{ position: "relative", top: "90px", marginBottom: "2rem", paddingBottom: "90px", paddingTop: "5rem" }}>
-        <div className="img-container" style={{ display: "flex", marginBottom: "2rem", flexDirection: "column" }}>
-          <img style={{ margin: "auto", marginBottom: "1rem" }} className="img-fluid" draggable="false" src={postData.image} alt="" />
-          <span style={{ textAlign: "center" }}>{postData.date} </span>
+      <div
+        className="container event-container"
+        style={{
+          position: "relative",
+          top: "50px",
+          marginBottom: "2rem",
+          paddingBottom: "90px",
+          paddingTop: "5rem",
+        }}
+      >
+        <div
+          className="img-container"
+          style={{
+            position: "relative",
+            display: "flex",
+            marginBottom: "2rem",
+            flexDirection: "row",
+            alignItems: "center",
+            padding: 10,
+          }}
+        >
+          <h1
+            className="event-title"
+            style={{ marginLeft: 20, marginRight: 20 }}
+          >
+            {postData.title}
+          </h1>
+          <div className="img-wrapper">
+            <img
+              style={{
+                margin: "auto",
+                position: "relative",
+                borderRadius: 20,
+                zIndex: 101,
+                width: "100%",
+              }}
+              className="img-fluid"
+              draggable="false"
+              src={postData.image}
+              alt={postData.title}
+              ref={ref}
+            />
+            <div
+              className="sic"
+              style={{
+                zIndex: 99,
+                background: "rgb(50,241,143)",
+                borderRadius: 20,
+                height: imgHeight - 10,
+                width: "100%",
+                position: "absolute",
+                bottom: 30,
+                width: imgWidth,
+                right: -10,
+              }}
+            ></div>
+          </div>
         </div>
-        <h1>{postData.title}</h1>       
-        <div>
-          {finalPara}
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <span>{postData.date} </span>
+        </div>
+        <div style={{ marginTop: 70 }}>
+          <h1 className="secondary-title">{postData.title}</h1>
+          <div>{finalPara}</div>
         </div>
       </div>
-      < Footer />
+      <Footer />
     </div>
   );
 };
