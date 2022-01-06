@@ -48,7 +48,7 @@ export const Team = () => {
   return (
     <div>
       <Navbar />
-      <div className="membersSection container">
+      <div className="membersSection container main">
         <h1>Our Core Team</h1>
         <h4 className="my-4">Heads & Coordinators</h4>
         <div className="row gridCenter">{_dataRenderer(heads)}</div>
