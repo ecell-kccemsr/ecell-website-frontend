@@ -12,7 +12,11 @@ const Events = (props) => {
   }, []);
   const eventCardRender = data.map((item, pos) => {
     return (
-      <div key={pos} className="col-lg-4 col-sm-6 cardContainer">
+      <div
+        key={pos}
+        className="col-lg-4 col-sm-6 cardContainer"
+        style={{ maxWidth: "22rem" }}
+      >
         <div className="item mx-2">
           <div className="blog-details">
             <div className="imgContainer">
@@ -36,7 +40,7 @@ const Events = (props) => {
       <Navbar onMenuClick={props.onMenuClick} />
       <div className="EventsContainer">
         <h1 className="text-center my-5">Check our blogs</h1>
-        <div className="row">{eventCardRender}</div>
+        <div className="row gridCol">{eventCardRender}</div>
       </div>
       <Footer />
     </div>

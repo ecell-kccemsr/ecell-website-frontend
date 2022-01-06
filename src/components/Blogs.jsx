@@ -40,7 +40,11 @@ const Blogs = () => {
           {data &&
             data.map((item, pos) => {
               return (
-                <div key={uuid()} className="item mx-2">
+                <div
+                  key={uuid()}
+                  className="item mx-2"
+                  // style={{ maxWidth: "rem" }}
+                >
                   <div className="blog-details">
                     <div className="imgContainer">
                       <img

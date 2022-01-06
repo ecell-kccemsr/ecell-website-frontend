@@ -48,26 +48,26 @@ export const Team = () => {
   return (
     <div>
       <Navbar />
-      <div className="membersSection">
+      <div className="membersSection container">
         <h1>Our Core Team</h1>
         <h4 className="my-4">Heads & Coordinators</h4>
-        <div className="row">{_dataRenderer(heads)}</div>
+        <div className="row gridCenter">{_dataRenderer(heads)}</div>
       </div>
       <div className="membersSection container">
         <h4 className="my-4">Developer Team</h4>
-        <div className="row">{_dataRenderer(developers)}</div>
+        <div className="row gridCenter">{_dataRenderer(developers)}</div>
       </div>
       <div className="membersSection container">
         <h4 className="my-4">Marketing Team</h4>
-        <div className="row">{_dataRenderer(marketing)}</div>
+        <div className="row gridCenter">{_dataRenderer(marketing)}</div>
       </div>
       <div className="membersSection container">
         <h4 className="my-4">Design Team</h4>
-        <div className="row">{_dataRenderer(design)}</div>
+        <div className="row gridCenter">{_dataRenderer(design)}</div>
       </div>
       <div className="membersSection container">
         <h4 className="my-4">Hardware Team</h4>
-        <div className="row">{_dataRenderer(hardware)}</div>
+        <div className="row gridCenter">{_dataRenderer(hardware)}</div>
       </div>
       <Footer />
     </div>

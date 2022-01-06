@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "../pages/members.css";
-import sumedhImg from "../images/team/sumedh-indulkar.jpeg";
+import sumedhImg from "../images/team/sumedh-inulkar.jpeg";
 import rishabhImg from "../images/team/rishabh-singh.png";
 
 export const Members = () => {

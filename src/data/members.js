@@ -7,7 +7,7 @@ import DevikaImg from "../images/team/devika-olkar.PNG";
 // Devs
 import BaliramImg from "../images/team/baliram-pansare.PNG";
 import ShriyashImg from "../images/team/shriyash-jadhav.png";
-import SumedhImg from "../images/team/sumedh-indulkar.jpeg";
+import SumedhImg from "../images/team/sumedh-inulkar.jpeg";
 import VishalPImg from "../images/team/vishal-pednekar.jpg";
 import AkshatIMg from "../images/team/akshat-mishra.jpg";
 import OmkarImg from "../images/team/omkar-karanje.jpg";
