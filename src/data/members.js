@@ -11,6 +11,7 @@ import SumedhImg from "../images/team/sumedh-inulkar.jpeg";
 import VishalPImg from "../images/team/vishal-pednekar.jpg";
 import AkshatIMg from "../images/team/akshat-mishra.jpg";
 import OmkarImg from "../images/team/omkar-karanje.jpg";
+import AnishImg from "../images/team/anish-khatu.jpeg";
 import RishabhImg from "../images/team/rishabh-singh.png";
 
 // Marketing
@@ -121,6 +122,15 @@ const developers = [
   },
   {
     id: 6,
+    name: "Anish Khatu",
+    position: "Member",
+    team: "Developer",
+    img: AnishImg,
+    github: "https://github.com/anishkhatu",
+    linkedIn: "https://www.linkedin.com/in/anish-khatu-b0b80322a",
+  },
+  {
+    id: 7,
     name: "Rishabh Singh",
     position: "Member",
     team: "Developer",
