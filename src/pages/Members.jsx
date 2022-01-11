@@ -22,7 +22,7 @@ export const Members = () => {
               <div className="img-container">
                 <img src={sumedhImg} alt="" />
               </div>
-              <div className="section-details">
+              <div className="section-details no-btm">
                 <h4>Sumedh Indulkar</h4>
                 <p>Full Stack Developer</p>
               </div>
@@ -44,7 +44,7 @@ export const Members = () => {
               <div className="img-container">
                 <img src={rishabhImg} alt="" />
               </div>
-              <div className="section-details">
+              <div className="section-details no-btm">
                 <h4>Rishabh Singh</h4>
                 <p>Full Stack Developer</p>
               </div>

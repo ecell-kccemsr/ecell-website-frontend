@@ -2,7 +2,7 @@
   margin-top: 90px;
   padding: 1.3rem;
 }
-.membersSection.container.main{
+.membersSection.container.main {
   margin-top: 90px;
 }
 .membersSection.container {
@@ -22,6 +22,13 @@
   margin: 2rem auto;
   border-radius: 15px;
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.memberCard .section-details.no-btm {
+  flex-direction: column;
+  min-height: 89px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .memberCard .section-details.no-btm p {
   margin-bottom: 0.2rem !important;

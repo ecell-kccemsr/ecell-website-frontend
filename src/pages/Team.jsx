@@ -8,6 +8,7 @@ import {
   marketing,
   hardware,
   design,
+  mentors,
 } from "../data/members";
 
 export const Team = () => {
@@ -27,12 +28,14 @@ export const Team = () => {
             <div className="section-details no-btm">
               <h4>{item.name}</h4>
               <p>{item.position}</p>
-              {item.position !== "Member" && <p>{item.team}</p>}
+              {item.position !== "Member" && item.team !== "mentors" && <p>{item.team}</p>}
             </div>
             <div className="social-icons">
-              <a target="_blank" href={item.github}>
-                <i className="bi bi-github"></i>
-              </a>
+              {item.team !== "mentors" ? (
+                <a target="_blank" href={item.github}>
+                  <i className="bi bi-github"></i>
+                </a>
+              ) : null}
               <a target="_blank" href={item.linkedIn}>
                 <i className="bi bi-linkedin"></i>
               </a>
@@ -50,6 +53,10 @@ export const Team = () => {
       <Navbar />
       <div className="membersSection container main">
         <h1>Our Core Team</h1>
+        <h4 className="my-4">Mentors</h4>
+        <div className="row gridCenter">{_dataRenderer(mentors)}</div>
+      </div>
+      <div className="membersSection container">
         <h4 className="my-4">Heads & Coordinators</h4>
         <div className="row gridCenter">{_dataRenderer(heads)}</div>
       </div>
