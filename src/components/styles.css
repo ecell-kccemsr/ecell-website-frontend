@@ -133,6 +133,9 @@ span {
 }
 .blog-details img {
   border-radius: 10px 10px 0 0;
+  height: 280px;
+  object-fit: cover;
+  width: 100%;
 }
 .blog-details div {
   background-color: #0a221405;

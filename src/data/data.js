@@ -1,8 +1,27 @@
 import firstImg from "../images/event1.png";
 import secondImg from "../images/event2.webp";
 import thirdImg from "../images/event3.webp";
+import fourthImg from "../images/event4.png";
+import fifthImg from "../images/event5.png";
 
 const data = [
+  {
+    title: "Get started with Git and GitHub ",
+    date: "Date: May 16th, 2021",
+    image: fifthImg,
+    desc: `On May 16 2021, KC Ecell graciously hosted “Get started with Git and GitHub'' streamed on youtube. Git and github may be challenging to use for a newbie. However, the featured speaker, Bhaktij Koli, a freelancer and Full Stack developer with excellent communication skills, inspired many students by making the process simple. He presented an excellent introduction and demonstration of how to use Git and GitHub. \nHe covered everything from creating a profile to collaborating on Github. He covered every detail of github, including how to maintain track of project history. He also underlined the role of learning github in our professional lives. Students learned how to engage with developers and contribute to open source projects.
+    They also gave positive feedback and were pleased with the information given in the webinar.`,
+    url: "get-started-with-git-and-github",
+  },
+  {
+    title: "Brisk Walk into Python Programming",
+    date: "Date: March 13th, 2021",
+    image: fourthImg,
+    desc: `KC Ecell conducted a live webinar on youtube about "Brisk Walk into Python Programming" on May 13th, 2021. Vishal Pednekar, a web and flutter developer, was the first speaker and covered subjects such as What is Python? Why should you learn it? Not only did he teach the fundamentals of Python, but he also offered a learning roadmap and examples of where Python is used. He gave a quiz based on what he taught to make the session more fun and useful.
+    A competitive coder with gold batches in Java and silver badges in Python, Sayali Tawhare was the next speaker. She discussed Python resources that you can use to learn the language. Despite its brief duration, this webinar covered everything you needed to know about Python.
+    This webinar would not have been a success without the active participation of the students. The coordinators were delighted to see how attentive and engaged the students were.`,
+    url: "brisk-walk-into-python-programming",
+  },
   {
     title: "Seminar & Workshop on AI and Cyber Security",
     date: "Date: August 25th, 2018",

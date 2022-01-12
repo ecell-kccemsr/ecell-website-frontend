@@ -18,7 +18,7 @@ const EventPost = (props) => {
 
   if (loadLocation === true) {
     data.map((item, pos) => {
-      if (slug === item.url) {
+      if (slug === item.url.trim()) {
         setLocationBlog(locationBlog + pos);
         setLoadLocation(false);
       }
