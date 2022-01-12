@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import logo from "../images/kcecell.png";
 import { useLocation, Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 function Navbar(props) {
   const [navbar, setNavbar] = useState(false);
   const location = useLocation();
@@ -40,9 +41,9 @@ function Navbar(props) {
       );
     } else {
       return (
-        <Link className="nav-link" to="/">
+        <HashLink className="nav-link" to="/#contact">
           Contact
-        </Link>
+        </HashLink>
       );
     }
   };
