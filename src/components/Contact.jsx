@@ -12,13 +12,13 @@ function Contact() {
               <p className="w-70">
                 Sadguru Gardens, Mithbunder Rd, near Kopri, Valmiki Nagar, Thane
               </p>
-              <p>
-                <Phone /> +022 2532 7100
-              </p>
             </div>
             <div className="mt-5">
               <h2>Say Hello</h2>
               <p className="w-70">K.C. Ecell a team of student developers</p>
+              <p>
+                <Phone /> +91 77108 48662
+              </p>
               <p>
                 <Email /> kcecell@kccemsr.edu.in
               </p>

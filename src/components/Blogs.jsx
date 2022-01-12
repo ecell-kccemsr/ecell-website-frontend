@@ -34,7 +34,7 @@ const Blogs = () => {
   return (
     <div id="blogs" className="Blogs">
       <div className="container">
-        <h1 className="text-center my-5">Check our blogs</h1>
+        <h1 className="text-center my-5">Check our events</h1>
 
         <OwlCarousel className="slider-items owl-carousel" {...options}>
           {data &&
