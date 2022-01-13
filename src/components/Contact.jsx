@@ -23,8 +23,8 @@ function Contact() {
     ) {
       emailjs
         .sendForm(
-          "service_7xpd9xf",
-          "template_pfo5s8f",
+          process.env.REACT_APP_EMAIL_JS_SERVICE_ID,
+          process.env.REACT_APP_EMAIL_JS_TEMPLATE_ID,
           e.target,
           "user_qiN1BppQ1Rvr3ZgzXGCVR"
         )
