@@ -9,7 +9,7 @@ function Header() {
             data-aos="zoom-out"
             data-aos-anchor-placement="top-center"
             className="col-md-6 order-1 order-md-2 mt-5 mt-md-0 "
-            style={{display:"flex"}}
+            style={{ display: "flex" }}
           >
             <img
               className="home-img img-fluid"

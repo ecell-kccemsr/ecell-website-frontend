@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from "react";
 import logo from "../images/kcecell.png";
 import { useLocation, Link } from "react-router-dom";
@@ -18,7 +19,7 @@ function Navbar(props) {
     }
   };
   const isLocHomeCheck = () => {
-    if (currentLocation == "/") {
+    if (currentLocation === "/") {
       setIsLocHome(true);
     } else {
       setIsLocHome(false);
@@ -33,7 +34,7 @@ function Navbar(props) {
 
   window.addEventListener("scroll", changeBg);
   const contactLink = () => {
-    if (currentLocation == "/") {
+    if (currentLocation === "/") {
       return (
         <a className="nav-link" href="#contact">
           Contact

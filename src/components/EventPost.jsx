@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect, useRef } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
@@ -22,6 +23,7 @@ const EventPost = (props) => {
         setLocationBlog(locationBlog + pos);
         setLoadLocation(false);
       }
+      return null;
     });
   }
   const postData = data[locationBlog];
@@ -101,7 +103,6 @@ const EventPost = (props) => {
                 background: "rgb(50,241,143)",
                 borderRadius: 20,
                 height: imgHeight - 10,
-                width: "100%",
                 position: "absolute",
                 bottom: 30,
                 width: imgWidth,

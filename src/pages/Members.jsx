@@ -27,12 +27,17 @@ export const Members = () => {
                 <p>Full Stack Developer</p>
               </div>
               <div className="social-icons">
-                <a target="_blank" href="https://github.com/sumedhindulkar">
+                <a
+                  target="_blank"
+                  href="https://github.com/sumedhindulkar"
+                  rel="noreferrer"
+                >
                   <i className="bi bi-github"></i>
                 </a>
                 <a
                   target="_blank"
                   href="https://www.linkedin.com/in/sumedh-indulkar/"
+                  rel="noreferrer"
                 >
                   <i className="bi bi-linkedin"></i>
                 </a>
@@ -49,12 +54,17 @@ export const Members = () => {
                 <p>Full Stack Developer</p>
               </div>
               <div className="social-icons">
-                <a target="_blank" href="https://github.com/thisisrishabh22">
+                <a
+                  target="_blank"
+                  href="https://github.com/thisisrishabh22"
+                  rel="noreferrer"
+                >
                   <i className="bi bi-github"></i>
                 </a>
                 <a
                   target="_blank"
                   href="https://www.linkedin.com/in/rishabhh-singh/"
+                  rel="noreferrer"
                 >
                   <i className="bi bi-linkedin"></i>
                 </a>

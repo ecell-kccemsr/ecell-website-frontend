@@ -28,15 +28,17 @@ export const Team = () => {
             <div className="section-details no-btm">
               <h4>{item.name}</h4>
               <p>{item.position}</p>
-              {item.position !== "Member" && item.team !== "mentors" && <p>{item.team}</p>}
+              {item.position !== "Member" && item.team !== "mentors" && (
+                <p>{item.team}</p>
+              )}
             </div>
             <div className="social-icons">
               {item.team !== "mentors" ? (
-                <a target="_blank" href={item.github}>
+                <a target="_blank" href={item.github} rel="noreferrer">
                   <i className="bi bi-github"></i>
                 </a>
               ) : null}
-              <a target="_blank" href={item.linkedIn}>
+              <a target="_blank" href={item.linkedIn} rel="noreferrer">
                 <i className="bi bi-linkedin"></i>
               </a>
             </div>
