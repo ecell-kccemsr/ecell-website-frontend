@@ -65,7 +65,7 @@ function Contact() {
               <h2>Say Hello</h2>
               <p className="w-70">K.C. Ecell a team of student developers</p>
               <p>
-                <Phone /> +91 77108 48662
+                <Phone /> +91 95945 22804
               </p>
               <p>
                 <Email /> kcecell@kccemsr.edu.in

@@ -4,11 +4,12 @@ import Footer from "../components/Footer";
 import "../pages/members.css";
 import {
   heads,
-  developers,
+  wedDevelopers,
   marketing,
   hardware,
-  design,
   mentors,
+  dataScience,
+  documentation,
 } from "../data/members";
 
 export const Team = () => {
@@ -33,7 +34,7 @@ export const Team = () => {
               )}
             </div>
             <div className="social-icons">
-              {item.team !== "mentors" ? (
+              {item.github ? (
                 <a target="_blank" href={item.github} rel="noreferrer">
                   <i className="bi bi-github"></i>
                 </a>
@@ -63,20 +64,24 @@ export const Team = () => {
         <div className="row gridCenter">{_dataRenderer(heads)}</div>
       </div>
       <div className="membersSection container">
-        <h4 className="my-4">Developer Team</h4>
-        <div className="row gridCenter">{_dataRenderer(developers)}</div>
+        <h4 className="my-4">Web Development Team</h4>
+        <div className="row gridCenter">{_dataRenderer(wedDevelopers)}</div>
       </div>
       <div className="membersSection container">
-        <h4 className="my-4">Marketing Team</h4>
+        <h4 className="my-4">Data Science Team</h4>
+        <div className="row gridCenter">{_dataRenderer(dataScience)}</div>
+      </div>
+      <div className="membersSection container">
+        <h4 className="my-4">Design & Marketing Team</h4>
         <div className="row gridCenter">{_dataRenderer(marketing)}</div>
       </div>
       <div className="membersSection container">
-        <h4 className="my-4">Design Team</h4>
-        <div className="row gridCenter">{_dataRenderer(design)}</div>
+        <h4 className="my-4">IOT Team</h4>
+        <div className="row gridCenter">{_dataRenderer(hardware)}</div>
       </div>
       <div className="membersSection container">
-        <h4 className="my-4">Hardware Team</h4>
-        <div className="row gridCenter">{_dataRenderer(hardware)}</div>
+        <h4 className="my-4">Documentation Team</h4>
+        <div className="row gridCenter">{_dataRenderer(documentation)}</div>
       </div>
       <Footer />
     </div>

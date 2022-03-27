@@ -2,8 +2,6 @@ import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "../pages/members.css";
-import sumedhImg from "../images/team/sumedh-inulkar.jpeg";
-import rishabhImg from "../images/team/rishabh-singh.png";
 
 export const Members = () => {
   useEffect(() => {
@@ -20,7 +18,10 @@ export const Members = () => {
           <div className="col-lg-4 col-md-6">
             <div className="memberCard">
               <div className="img-container">
-                <img src={sumedhImg} alt="" />
+                <img
+                  src={"/images/sumedh-indulkar.jpg"}
+                  alt="Sumedh Indulkar"
+                />
               </div>
               <div className="section-details no-btm">
                 <h4>Sumedh Indulkar</h4>
@@ -47,7 +48,7 @@ export const Members = () => {
           <div className="col-lg-4 col-md-6">
             <div className="memberCard">
               <div className="img-container">
-                <img src={rishabhImg} alt="" />
+                <img src={"/images/rishabh-singh.png"} alt="Rishabh Singh" />
               </div>
               <div className="section-details no-btm">
                 <h4>Rishabh Singh</h4>
