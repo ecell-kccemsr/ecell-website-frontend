@@ -68,10 +68,10 @@ span {
 .navbar-toggler:focus {
   box-shadow: none;
 }
-.gridCol {
+.gridCol{
   justify-content: space-evenly;
 }
-.gridCenter {
+.gridCenter{
   justify-content: center;
 }
 
@@ -81,7 +81,7 @@ span {
   margin-top: -10px;
   background-repeat: no-repeat !important;
   background-size: cover !important;
-  background: url(../../public/images/ecell-bg.svg) center center;
+  background: url("../images/ecell-bg.svg") center center;
 }
 @media (max-width: 768px) {
   .header {
