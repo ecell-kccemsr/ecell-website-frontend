@@ -1,5 +1,4 @@
 import React from "react";
-import homeImg from "../images/Businessman-amico.svg";
 function Header() {
   return (
     <div className="header">
@@ -13,8 +12,8 @@ function Header() {
           >
             <img
               className="home-img img-fluid"
-              src={homeImg}
-              alt="study-girl"
+              src="/images/home.svg"
+              alt="Kc Ecell"
             />
           </div>
           <div

@@ -50,7 +50,7 @@ const Blogs = () => {
                       <img
                         src={item.image}
                         className=" p-0 img-fluid"
-                        alt="blog"
+                        alt={item.title}
                       />
                     </div>
                     <div className="px-3 cardDetails py-4">
