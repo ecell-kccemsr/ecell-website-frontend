@@ -34,6 +34,14 @@ const EventPost = (props) => {
     document.title = postData.title;
   }, []);
 
+  useEffect(() => {
+    if (postData) {
+      document
+        .querySelector('meta[name="description"]')
+        .setAttribute("content", `${postData.desc.slice(0, 120)} ...`);
+    }
+  }, [postData]);
+
   const paraData = postData.desc;
   const paraArr = paraData.split("\n");
   const finalPara = paraArr.map((item, index) => {

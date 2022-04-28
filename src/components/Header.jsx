@@ -2,7 +2,7 @@ import React from "react";
 function Header() {
   return (
     <div className="header">
-      <div className="container d-flex align-items-center">
+      <div className="home container d-flex align-items-center">
         <div className="row gx-0 gy-0">
           <div
             data-aos="zoom-out"
